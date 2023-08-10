@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Life Care - Heart Prediction Online</title>
+  <link rel="shortcut icon" href="{{url_for('static', filename='images/fevicon.png' )}}" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css' )}}" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="/project_development_phase/sprint-3/Application Building/static/css/style.css">
+  <link rel="stylesheet" href="/project_development_phase/sprint-3/Application Building/static/css/main.css">
+  <link rel="stylesheet" href="/project_development_phase/sprint-3/Application Building/static/css/about.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!--Navigation Bar-->
+    <div class="nav">
+      <div class="logo">
+        <a href="/">
+          <img src="/project_development_phase/sprint-3/Application Building/static/images/logo.png" style="width:190px" />
+        </a>
+      </div>
+      <div class="links">
+        <a href="/home" class="mainLink">Home</a>
+        <a href="/info">Info</a>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/upload" class="btn1">Predict</a>
+      </div>
+    </div>
+    <!--Landing Page-->
+    <div style="background-image: url('https://i.pinimg.com/originals/c8/4b/ed/c84bedb7c06a6506c4f39fd97f47c12e.jpg');
+    background-size: cover;">
+    <div class="landing">
+      <div class="landingText" data-aos="fade-up" data-aous-duration="1000" >
+        <h1 style="color:white">
+          ECG Arrhythmia classification using CNN
+        </h1>
+        <h3 style="font-family:Lucida Calligraphy;color:white;padding-top:50px; ">
+          According to the World Health Organization (WHO), cardiovascular diseases (CVD) are the number one cause of death today. 
+          Over 17.7 million people died from CVDs in the year 2017 all over the world which is abour 31% of all deaths, and over 75% of these deaths occur in low and middle income countries. 
+          Arrhythmia is a representative type of CVD that refers to any irregular change from the normal heart rhythms. 
+          There are several types of arrhythmia including atrial fibrillation, premature contraction, ventricular fibrillation, and tachycardia Altugh single arrhythmia heartbeat may not have a serious impact on life, continuous arrhythmia beats can result in fatal circumstances.
+           For example, prolonged premature ventricular contraction (PVCS) beats occasionally turn into a ventricular tachycardia (VI) or ventricular fibrillation (VF) beats which can immediately lead to heart failure.
+            Thus, it is important to periodically monitor the heart rhythms to manage and prevent the CVDs. Electrocardiogram (ECG) is a non-invasive medical tool that displays the rhythm and status of the heart. 
+            Therefore, automatic detection of irregular heart rhythms from ECG signals is a significant task in the field of cardiology
+        </h3>
+      </div>   
+    </div>
+    </div>
+
+    <!--Service Section-->
+    <div class="about">
+      <div class="aboutText" data-aos="fade-up" data-aous-duration="1000">
+        <h1 style="margin: 20px;font-family:Algerian;font-weight: 20;">
+          Our Patients Are at Centre
+          <span style="color: #2f8be0; font-size: 3vw; font-family:Algerian;font-weight: 20;">of Every We Do</span>
+        </h1>
+        <div class="image-container">
+          <img src="/project_development_phase/sprint-3/Application Building/static/images/connsultPationt.png" alt="consultPationt"
+            style="width:400px; margin:100px 0px 0px 90px;"></img>
+        </div>
+      </div>
+      <div class="aboutList" data-aos="fade-left" data-aous-duration="1000">
+        <ol>
+          <li>
+            <span>01</span>
+            <p style="font-family:Lucida Calligraphy;">99.8% accurate result.</p>
+          </li>
+          <li>
+            <span>02</span>
+            <p style="font-family:Lucida Calligraphy;">No need to go hospital.</p>
+          </li>
+          <li>
+            <span>03</span>
+            <p style="font-family:Lucida Calligraphy;">No need to login</p>
+          </li>
+          <li>
+            <span>04</span>
+            <p style="font-family:Lucida Calligraphy;">24/7 Support.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!--Info Section-->
+    <div class="infoSection">
+      <div class="infoHeader" data-aos="fade-up" data-aous-duration="1000">
+        <h1 style="font-family:Algerian;font-weight: 20;">
+          We Analyse Youe Health states <br /><span style="color: #e0501b">In Order to Top Service.</span>
+        </h1>
+      </div>
+      <div class="infoCards">
+        <div class="card one" data-aos="fade-up" data-aous-duration="1600">
+          <img src="/project_development_phase/sprint-3/Application Building/static/images/banner_1.svg"  class="cardoneImg" alt="" data-aos="fade-up"
+            data-aous-duration="1000" />
+          <div class="cardbgone"></div>
+          <div class="cardContent">
+            <h2 style="font-family:Algerian;font-weight: 20;">Health State</h2>
+            <p style="font-family:Lucida Calligraphy;">
+              Easy to know Health state
+            </p>
+            <a href="/">
+              <div class="cardBtn">
+                <img src="/project_development_phase/sprint-3/Application Building/static/images/next.png" alt="" class="cardIcon" />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card two" data-aos="fade-up" data-aous-duration="1600">
+          <img src="/project_development_phase/sprint-3/Application Building/static/images/banner_1.svg"  class="cardtwoImg" alt="" data-aos="fade-up"
+            data-aous-duration="1000" />
+          <div class="cardbgtwo"></div>
+          <div class="cardContent">
+            <h2 style="font-family:Algerian;font-weight: 20;">User Friendly</h2>
+            <p style="font-family:Lucida Calligraphy;">
+              Easy for people to use, prediction
+            </p>
+            <a href="/">
+              <div class="cardBtn">
+                <img src="/project_development_phase/sprint-3/Application Building/static/images/next.png" alt="" class="cardIcon" />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="card three" data-aos="fade-up" data-aous-duration="1600">
+          <img src="/project_development_phase/sprint-3/Application Building/static/images/banner_1.svg" class="cardthreeImg" alt="" data-aos="fade-up"
+            data-aous-duration="1000" />
+          <div class="cardbgthree"></div>
+          <div class="cardContent">
+            <h2 style="font-family:Algerian;font-weight: 20;">Classification of Arrhythmia</h2>
+            <p style="font-family:Lucida Calligraphy;">
+              Prediction Classification of Arrhythmia
+            </p>
+            <a href="/upload">
+              <div class="cardBtn">
+                <img src="/project_development_phase/sprint-3/Application Building/static/images/next.png" alt="" class="cardIcon" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Banner And Footer-->
+    <div class="banner">
+      <div class="bannerText" data-aos="fade-right" data-aous-duration="1000">
+        <h1 style="font-family:Algerian;font-weight: 20;">
+          Download the LifeCare App Today <br /><span style="font-size: 1.6vw; font-weight: normal"
+            class="bannerInnerText" style="font-family:Lucida Calligraphy;">Stay Updated and get all your medical needs taken care of!</span>
+        </h1>
+        <a href="/"><img src="/project_development_phase/sprint-3/static/images/AndroidPNG.png" alt="" /></a>
+        <a href="/"><img src="/project_development_phase/sprint-3/static/images/iosPNG.png" alt="" /></a>
+      </div>
+      <div class="bannerImg" data-aos="fade-up" data-aous-duration="1000">
+        <img src="/project_development_phase/sprint-3/static/images/app.png" alt="" />
+      </div>
+    </div>
+
+    <div class="footer">
+      <h1>LifeCare</h1>
+      <div class="footerlinks">
+        <a href="/home" class="mainLink">Home</a>
+        <a href="/info">Info</a>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
 
