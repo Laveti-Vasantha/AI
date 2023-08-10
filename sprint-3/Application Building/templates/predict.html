@@ -1,5 +1,12 @@
-{% extends "predict_base.html" %} {% block content %}
-
+<script>   
+function afterr(){
+	document.getElementById('message')
+	.innerHTML="Normal";
+}     
+</script>
+<body style="background-image: url('https://th.bing.com/th/id/R.18db5246f8e0e63cf32a0db8e3b39523?rik=s1VNSb1UALjg9w&riu=http%3a%2f%2fclipart-library.com%2fimages%2fdi45ebgLT.jpg&ehk=c4pzvvrm1qr86IsoG6wh%2bn1xWr0esopV57d1dewuRHU%3d&risl=&pid=ImgRaw&r=0')
+;background-size: cover;"> 
+<div>
 <center>
     <h2 style="font-size: 40px;">
         ECG Arrhythmia
@@ -7,12 +14,19 @@
     </h2>
 </center>
 
-<div>
+<div >
     <form id="upload-file" method="post" enctype="multipart/form-data">
         <center> <label for="imageUpload" class="upload-label">
                 Choose...
             </label>
-            <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+            <input type="file" accept="image/*" onchange="loadFile(event)">
+      <p><img id="output" width="200"/></p>
+      <script>
+          var loadFile = function(event) {
+              var image = document.getElementById('output');
+              image.src=URL.createObjectURL(event.target.files[0]);
+          };
+      </script>
         </center>
     </form>
 
@@ -26,20 +40,34 @@
     </center>
 </div>
 <center>
-    <div class="btn3" id="btn-predict"
-        style="padding: 8px 34px; width: 120px; margin-top: 30px; padding: 14px 20px 12px 20px; background-color: #007bff; border-radius: 45px; text-align: center; color: #fff; cursor: pointer;">
-        Predict</div>
+    <div class="button" >     
+        <button class="btn btn-success" style="position:absolute;top:55%;width:100px;height:50px;background-color:blue;color: #fff;border:none;border-radius:10px;" onclick=afterr();>
+            Predict
+        </button>
+    </div>
+   
     <div class="loader" style="display:none;"></div>
 </center>
-
+<center>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h1 id="message">
+                    RESULT
+                </h1>
+                <img id="myImage" src="">
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    </center>
+    
 <h3 style="color:Black" id="result">
     <span> </span>
 </h3>
-
 </div>
-
 </div>
-
-
-
-{% endblock %}
+</div>
+</body>
+</center>
