@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{url_for('static', filename='images/fevicon.png' )}}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/contact.css' )}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css' )}}" />
+    <title>Life Care - Contact US</title>
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="logo">
+                <a href="/">
+                    <img src="//project_development_phase/sprint-3/Application Building/static/images/logo.png" style="width:190px" />
+                </a>
+            </div>
+            <div class="links">
+                <a href="index.html" class="mainLink">Home</a>
+                <a href="info.html">Info</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="predict.html" class="btn1">Predict</a>
+            </div>
+        </div>
+        <div class="container" data-aos="fade-down" data-aous-duration="1000">
+            <div class="image" data-aos="fade-right" data-aous-duration="6000">
+                <img src="/project_development_phase/sprint-3/Application Building/static/images/contact.png" alt="">
+            </div>
+            <div class="form-area" >
+                <h2 style="font-family:Algerian;font-weight: 20;">Contact US</h2>
+                <form action="">
+                    <input type="text" placeholder="Full Name" style="font-family:Lucida Calligraphy;color:white;">
+                    <input type="email" placeholder="Email" style="font-family:Lucida Calligraphy;color:white;">
+                    <input type="text" placeholder="Subject" style="font-family:Lucida Calligraphy;color:white;">
+                    <textarea cols="30" rows="3" placeholder="Your Message" style="font-family:Lucida Calligraphy;color:white;"></textarea>
+                    <button type="submit" style="font-family:Algerian;font-weight: 20;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
